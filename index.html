@@ -23,6 +23,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello</p>
+    <?php
+if(isset($_REQUEST['name']) and isset($_REQUEST['text'])) {
+
+    $name = $_REQUEST['name'];
+    $text = $_REQUEST['text'];
+    echo 'Ваше имя:'.$name.'Ваш текст'.$text;
+}
+?>
+<form action"" method='POST'>
+    Введите ваше имя: <input type="text" name ="name" value="<?=$name;?>">
+    Введите ваш текст: <input type="text" name ="text" value="<?=$text;?>">
+    <input type="submit"></textarea>
+</form>
 </body>
 </html>
